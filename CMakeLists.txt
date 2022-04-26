@@ -9,7 +9,7 @@ project(main)
 add_subdirectory(libtga-master)
 
 # add the executable
-add_executable(${PROJECT_NAME} test.c predictors.c utilities.c)
+add_executable(${PROJECT_NAME} main.c predictors.c utilities.c)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC libtga PRIVATE m)
 

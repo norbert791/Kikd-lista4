@@ -17,11 +17,30 @@ typedef struct {
     double green;
     double blue;
     double total;
-} predictorResults;
+} entropyValues;
 
-double computeEntropy(size_t length, uint8_t byteArray[static length]);
+double computeEntropy(size_t length, const uint8_t byteArray[static length]);
 
-predictorResults runPrediction(color* byteMatrix, size_t width, size_t heigth, int64_t (*predictor)(int64_t, int64_t, int64_t));
+/**
+ * @brief Compute entropy for primary colors and pixesl for given pixelMatrix and predictor
+ * 
+ * @param pixelMatrix image pixels
+ * @param width image width
+ * @param height image height
+ * @param predictor used predictor
+ * @return entropyValues results for respective entropies
+ */
+entropyValues runPrediction(const color* pixelMatrix, size_t width, size_t height, int64_t (*predictor)(int64_t, int64_t, int64_t));
+
+/**
+ * @brief compute initial entropy of an image
+ * 
+ * @param pixelMatrix matrix of pixels
+ * @param width matrix width
+ * @param height matrix height
+ * @return entropyValues computed values for respective entropies
+ */
+entropyValues computeInputEntropy(const color* pixelMatrix, size_t width, size_t height);
 
 /**
  * @brief predictor

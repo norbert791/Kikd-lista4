@@ -1,0 +1,59 @@
+Initial entropies:
+for red: 3.622158
+for green 3.622363
+for blue 3.087933
+for pixel 3.087933
+
+Predictor no 1 results:
+Pixel entropy: 5.208435
+Red entropy 6.251149
+Green entropy 6.249839
+Blue entropy 5.183080
+
+Predictor no 2 results:
+Pixel entropy: 3.879865
+Red entropy 5.261358
+Green entropy 3.651710
+Blue entropy 3.865288
+
+Predictor no 3 results:
+Pixel entropy: 5.198712
+Red entropy 6.242533
+Green entropy 6.241610
+Blue entropy 5.175536
+
+Predictor no 4 results:
+Pixel entropy: 5.990542
+Red entropy 7.959708
+Green entropy 7.996130
+Blue entropy 5.961560
+
+Predictor no 5 results:
+Pixel entropy: 7.046444
+Red entropy 7.589320
+Green entropy 7.649653
+Blue entropy 6.032189
+
+Predictor no 6 results:
+Pixel entropy: 6.781604
+Red entropy 7.865675
+Green entropy 7.914104
+Blue entropy 6.229855
+
+Predictor no 7 results:
+Pixel entropy: 6.132921
+Red entropy 6.715629
+Green entropy 6.123446
+Blue entropy 5.521104
+
+Predictor no 8 results:
+Pixel entropy: 4.595742
+Red entropy 5.329568
+Green entropy 3.669046
+Blue entropy 4.559566
+
+Best predictor:
+for pixel: 2
+for red: 2
+for green: 2
+for blue: 2
