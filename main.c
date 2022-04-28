@@ -48,10 +48,11 @@ int main(int argc, char** argv) {
 
     color array[width * height];
 
-    for (size_t i = 0; i < width * height; i += 3) {
-        array[i].red = (uint8_t) data.img_data[i];
-        array[i].green = (uint8_t) data.img_data[i + 1];
-        array[i].blue = (uint8_t) data.img_data[i + 2];
+    size_t j = 0;
+    for (size_t i = 0; i < width * height; i++) {
+        array[i].red = (uint8_t) data.img_data[j++];
+        array[i].green = (uint8_t) data.img_data[j++];
+        array[i].blue = (uint8_t) data.img_data[j++];
     }
 
     int64_t (*funs[8])(int64_t, int64_t, int64_t) = {predictor1, predictor2, predictor3, predictor4, predictor5, predictor6, predictor7, predictor8};
